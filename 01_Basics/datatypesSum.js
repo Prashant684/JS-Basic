@@ -36,3 +36,28 @@ console.log(myObj);
 const myFunction = function(){
     console.log("Hello guys");
 }
+
+// Stack (Primitive) - you will get a copy of the variable that you define 
+
+let myYoutubeName= "Shayar"
+let anotherName= myYoutubeName
+anotherName= "earbuds"
+
+console.log(myYoutubeName); //output - "Shayar"
+console.log(anotherName); //output - "earbuds"
+
+// Heap (Non-primitive) - you will get a reference of the original value 
+
+let userOne= {
+    email: "user@niet.co.in",
+    upi: "user2ybl"
+}
+
+let userTwo= userOne
+
+userTwo.email="Prashant@niet.co.in"
+
+console.log(userOne); // output - "Prashant@niet.co.in"
+console.log(userTwo); // output- "Prashant@niet.co.in"
+
+
